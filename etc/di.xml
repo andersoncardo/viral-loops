@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Cardoso\ViralLoops\Api\Data\ManagementInterface" type="Cardoso\ViralLoops\Model\Management"/>
+    <preference for="Cardoso\ViralLoops\Api\ManagementRepositoryInterface" type="Cardoso\ViralLoops\Model\ResourceModel\ManagementRepository"/>
+    <preference for="Cardoso\ViralLoops\Api\Data\ManagementSearchResultInterface" type="Cardoso\ViralLoops\Model\ResourceModel\ManagementSearchResult"/>
+
+    <!-- Update -->
+
+    <type name="Magento\Sales\Api\OrderRepositoryInterface">
+        <plugin name="ocean_drop_viral_loops_manage_coupon"
+                type="Cardoso\ViralLoops\Plugin\OrderSave"
+                sortOrder="10"/>
+    </type>
+</config>

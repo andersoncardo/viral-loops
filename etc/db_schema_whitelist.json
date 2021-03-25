@@ -1,0 +1,18 @@
+{
+    "viral_loops_management": {
+        "column": {
+            "entity_id": true,
+            "referral_code_origin": true,
+            "referral_code_customer": true,
+            "coupon_code": true,
+            "coupon_id": true,
+            "customer_id": true,
+            "created_at": true,
+            "is_used": true,
+            "coupon_value": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
